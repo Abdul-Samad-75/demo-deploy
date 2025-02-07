@@ -9,7 +9,7 @@ const { errorHandler } = require('./middleware/errorMiddleware');
 const { apiLimiter, authLimiter } = require('./middleware/rateLimitMiddleware');
 const { developmentLogging, productionLogging } = require('./middleware/loggingMiddleware');
 const connectDB = require('./config/db');
-
+const path = require('path');
 // Load env vars
 dotenv.config();
 
